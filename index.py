@@ -38,7 +38,7 @@ class Plane(pygame.sprite.Sprite):
 
         if keys_just_pressed[pygame.K_SPACE] and (current_time - self.shottime > self.shotdelay):
             Laser(sprites, self.rect.centerx, self.rect.top, laser_image)
-            self.shottime = current_time  # Update shot time
+            self.shottime = current_time 
 
 
 class Meteor(pygame.sprite.Sprite):
